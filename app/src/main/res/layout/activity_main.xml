@@ -59,7 +59,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="@drawable/button_login"
-        android:text="@string/notas" />
+        android:text="@string/notas"
+        android:onClick="buttonnotas"/>
 
 
     </RelativeLayout>

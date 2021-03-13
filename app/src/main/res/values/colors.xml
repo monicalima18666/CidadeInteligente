@@ -14,7 +14,6 @@
     <color name="colorAccent">#243F9C</color>
     <color name="colorBlack">@android:color/black</color>
     <color name="colorWhite">@android:color/white</color>
-    <color name="colorbotao">#B7FAB7</color>
-    <color name="colorfundo">#D6F6B0</color>
+    
 
 </resources>

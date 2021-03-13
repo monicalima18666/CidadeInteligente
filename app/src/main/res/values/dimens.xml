@@ -22,5 +22,6 @@
     <dimen name="SP02">11sp</dimen>
     <dimen name="SP03">15sp</dimen>
     <dimen name="SP04">20sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

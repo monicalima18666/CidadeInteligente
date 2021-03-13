@@ -15,4 +15,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, login::class.java)
         startActivity(intent)
     }
+
+    fun buttonnotas(view: View) {
+        val intent = Intent(this, Notas::class.java)
+        startActivity(intent)
+    }
 }
