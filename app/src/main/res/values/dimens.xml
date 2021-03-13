@@ -24,4 +24,9 @@
     <dimen name="SP04">20sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
+
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="big_padding">16dp</dimen>
+    <dimen name="min_height">48dp</dimen>
+
 </resources>
