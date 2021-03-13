@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CidadeInteligente</string>
+
+    <string name="intro">Bem-Vindo ao Veggie You!</string>
+    <string name="login2">Efetue o seu Login:</string>
+    <string name="registo_de_utilizador">Registo de Utilizador</string>
+    <string name="login">Login</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="registo"><u>Ainda não está registado?</u></string>
+    <string name="botao_registar">Registar</string>
+    <string name="Registar">Registar</string>
+    <string name="user">user</string>
+
+    <string name="username_2">Username :</string>
 </resources>
