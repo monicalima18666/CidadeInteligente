@@ -4,17 +4,30 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <EditText
-        android:id="@+id/edit_word"
+        android:id="@+id/edit_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/min_height"
         android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
         android:hint="@string/hint_word"
         android:inputType="textAutoComplete"
         android:layout_margin="@dimen/big_padding"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:background="@drawable/border_rounded"/>
+
+    <EditText
+        android:id="@+id/edit_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_descricao"
+        android:inputType="textMultiLine"
+        android:layout_margin="@dimen/big_padding"
+        android:textSize="18sp"
+        android:background="@drawable/border_rounded" />
 
     <Button
         android:id="@+id/button_save"
@@ -24,5 +37,6 @@
         android:text="@string/button_save"
         android:layout_margin="@dimen/big_padding"
         android:textColor="@color/white" />
+
 
 </LinearLayout>
