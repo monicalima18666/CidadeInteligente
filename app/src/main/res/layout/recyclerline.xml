@@ -33,11 +33,13 @@
         android:layout_marginTop="@dimen/DP10"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="@dimen/DP10"
-        android:src="@drawable/delete" />
+        android:src="@drawable/delete"
+        android:background="?selectableItemBackground"/>
 
     <ImageButton
 
         android:id="@+id/edit"
+        android:background="?selectableItemBackground"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentRight="true"
@@ -45,6 +47,8 @@
         android:layout_marginRight="92dp"
         android:layout_marginBottom="@dimen/DP10"
         android:src="@drawable/edit" />
+
+
 
 
 </RelativeLayout>

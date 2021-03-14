@@ -3,6 +3,7 @@ package ipvc.estg.cidadeinteligente.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.recyclerview.widget.RecyclerView
 import ipvc.estg.cidadeinteligente.R
 import ipvc.estg.cidadeinteligente.dataclasses.Nota
@@ -27,6 +28,7 @@ class LineAdapter(val list: ArrayList<Nota>):RecyclerView.Adapter<LineViewHolder
         holder.titulo.text = currentPlace.titulo
         holder.descricao.text = currentPlace.descricao
 
+
     }
 
 }
@@ -34,5 +36,9 @@ class LineAdapter(val list: ArrayList<Nota>):RecyclerView.Adapter<LineViewHolder
 class LineViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
     val titulo = itemView.titulo
     val descricao = itemView.descricao
+    //val delete = itemView.findViewById<ImageButton>(R.id.delete);
+    //val edit = itemView.findViewById<ImageButton>(R.id.edit);
+
+
 
 }

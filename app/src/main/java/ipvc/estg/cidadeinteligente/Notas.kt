@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import ipvc.estg.cidadeinteligente.adapter.LineAdapter
 import ipvc.estg.cidadeinteligente.dataclasses.Nota
@@ -42,7 +42,21 @@ class Notas : AppCompatActivity() {
         recycler_view.addItemDecoration(
             DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         )
+
+  /*      // Configurando o gerenciador de layout para ser uma lista horizontal.
+        var layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recycler_view.layoutManager = layoutManager
+
+*/
+    /*
+        // Criando o GridLayoutManager com duas colunas, descritas no segundo argumento.
+        layoutManager = GridLayoutManager(this, 2)
+        recycler_view.layoutManager = layoutManager*/
+
+
+
         }
+
 
     }
 /*
