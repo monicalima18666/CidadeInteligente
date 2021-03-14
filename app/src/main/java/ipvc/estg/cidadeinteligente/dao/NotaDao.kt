@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Update
 import ipvc.estg.cidadeinteligente.entities.Nota
 
 interface NotaDao {
@@ -19,4 +20,13 @@ interface NotaDao {
 
     @Query("DELETE FROM nota_table")
     suspend fun deleteAll()
+
+    @Update
+    suspend fun updateNota(nota: Nota)
+
+    @Query("DELETE FROM nota_table where titulo == :titulo")
+    suspend fun deleteByCity(titulo: String)
+
+    @Query("UPDATE nota_table SET descricao=:descricao WHERE titulo == :titulo")
+    suspend fun updateDescricaoFromTitulo(titulo: String, descricao: String)
 }
