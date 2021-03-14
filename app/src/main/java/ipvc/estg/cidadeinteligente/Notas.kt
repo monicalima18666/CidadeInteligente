@@ -1,14 +1,16 @@
 package ipvc.estg.cidadeinteligente
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import ipvc.estg.cidadeinteligente.adapter.LineAdapter
 import ipvc.estg.cidadeinteligente.dataclasses.Nota
 import kotlinx.android.synthetic.main.activity_notas.*
+
 
 class Notas : AppCompatActivity() {
 
@@ -24,19 +26,23 @@ class Notas : AppCompatActivity() {
 
         //Virá p.e. de WS
         for(i in 0 until 500) {
-            myList.add(Nota("Nota $i", "Descrição $i" ))
+            myList.add(Nota("Nota $i", "Descrição $i"))
         }
 
         recycler_view.adapter = LineAdapter(myList)
         recycler_view.layoutManager = LinearLayoutManager(this)
 
 
-        val fab = findViewById<FloatingActionButton>(R.id.fab)
-        fab.setOnClickListener {
-            val intent = Intent(this, NovaNota::class.java)
-            startActivity(intent)
+            val fab = findViewById<FloatingActionButton>(R.id.fab)
+            fab.setOnClickListener {
+                val intent = Intent(this, NovaNota::class.java)
+                startActivity(intent)
+                }
+
+        recycler_view.addItemDecoration(
+            DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        )
         }
-    }
 
     }
 /*

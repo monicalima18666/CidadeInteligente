@@ -16,6 +16,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
+            android:padding="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +44,7 @@
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
             android:tint="@android:color/white"
-            app:srcCompat="@android:drawable/ic_input_add"
-            android:onClick="insert"/>
+            app:srcCompat="@android:drawable/ic_input_add" />
 
     </RelativeLayout>
 
