@@ -5,9 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ipvc.estg.cidadeinteligente.R
-import ipvc.estg.cidadeinteligente.dataclasses.Nota
+//import ipvc.estg.cidadeinteligente.dataclasses.Nota
 import kotlinx.android.synthetic.main.recyclerline.view.*
 
+/*
 class LineAdapter(val list: ArrayList<Nota>):RecyclerView.Adapter<LineViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LineViewHolder {
 
@@ -36,3 +37,4 @@ class LineViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
     val descricao = itemView.descricao
 
 }
+*/
