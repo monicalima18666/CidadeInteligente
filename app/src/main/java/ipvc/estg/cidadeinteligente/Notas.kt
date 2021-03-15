@@ -12,9 +12,8 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import ipvc.estg.cidadeinteligente.adapter.LineAdapter
 import ipvc.estg.cidadeinteligente.adapter.NotaAdapter
-import ipvc.estg.cidadeinteligente.dataclasses.Nota
+import ipvc.estg.cidadeinteligente.entities.Nota
 import ipvc.estg.cidadeinteligente.viewModel.NotaViewModel
 import kotlinx.android.synthetic.main.activity_notas.*
 
@@ -71,8 +70,8 @@ class Notas : AppCompatActivity() {
 
     }
 
-}
-   /* override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == newNotaActivityRequestCode && resultCode == Activity.RESULT_OK) {
@@ -92,7 +91,7 @@ class Notas : AppCompatActivity() {
                 Toast.LENGTH_LONG).show()
         }
     }
-}*/
+}
 
 /*      // Configurando o gerenciador de layout para ser uma lista horizontal.
       var layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
@@ -103,12 +102,6 @@ class Notas : AppCompatActivity() {
     // Criando o GridLayoutManager com duas colunas, descritas no segundo argumento.
     layoutManager = GridLayoutManager(this, 2)
     recycler_view.layoutManager = layoutManager*/
-
-
-
-
-
-
 
 
 /*
